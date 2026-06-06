@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<textarea cols="90" rows="24">
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 51 - Igor Gorzoch</title>
+</head>
+<body>
+
+<script>
+    let ile_gor = prompt("Ile razy powtórzyć?");
+    ile_gor = parseInt(ile_gor);
+
+    let tekst_gor = prompt("Podaj tekst, np. swoje inicjały:");
+
+    for (let i_gor = 1; i_gor <= ile_gor; i_gor++) {
+        for (let j_gor = 1; j_gor <= i_gor; j_gor++) {
+            document.write("&nbsp;");
+        }
+
+        document.write(i_gor + "_" + tekst_gor + "_" + i_gor + "<br>");
+    }
+</script>
+
+</body>
+</html>
+</textarea>
+
+</body>
+</html>

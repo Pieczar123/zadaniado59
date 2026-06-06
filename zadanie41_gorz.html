@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Gorzoch-Zadanie41</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 20px; }
+h1, h2 { text-transform: uppercase; }
+p { margin: 5px 0; }
+.box { border: 1px solid #333; padding: 10px; margin: 10px 0; background-color: #f9f9f9; }
+.scheme { border: 2px dashed #555; padding: 10px; margin-top: 5px; text-align: center; background-color: #eef; }
+button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+</style>
+</head>
+<body>
+<h1>Zadanie 41 - Teoria pętli</h1>
+<button onclick="pokazTeorie()">Pokaż teorię</button>
+<div id="teoria" style="margin-top:20px;"></div>
+<script>
+function pokazTeorie() {
+  const teoriaDiv = document.getElementById('teoria');
+  teoriaDiv.innerHTML = "";
+  teoriaDiv.innerHTML += `
+  <div class="box">
+    <h2>Pętla FOR - Gorzoch</h2>
+    <p><strong>Konstrukcja:</strong> for(inicjalizacja; warunek; inkrementacja) { ... }</p>
+    <p><strong>Opis:</strong> Pętla, w której liczba iteracji jest z góry określona. Idealna do powtarzania określonej liczby razy.</p>
+    <div class="scheme">
+      START → Inicjalizacja → Sprawdź warunek → TAK → Wykonaj blok → Inkrementacja → Powrót do sprawdzenia warunku → NIE → STOP
+    </div>
+  </div>
+  `;
+  teoriaDiv.innerHTML += `
+  <div class="box">
+    <h2>Pętla WHILE (kontrolowane wejście) - Gorzoch</h2>
+    <p><strong>Konstrukcja:</strong> while(warunek) { ... }</p>
+    <p><strong>Opis:</strong> Pętla, która wykonuje blok kodu dopóki warunek jest prawdziwy. Sprawdzenie warunku odbywa się przed pierwszą iteracją.</p>
+    <div class="scheme">
+      START → Sprawdź warunek → TAK → Wykonaj blok → Powrót do sprawdzenia warunku → NIE → STOP
+    </div>
+  </div>
+  `;
+  teoriaDiv.innerHTML += `
+  <div class="box">
+    <h2>Pętla DO WHILE (kontrolowane wyjście) - Gorzoch</h2>
+    <p><strong>Konstrukcja:</strong> do { ... } while(warunek);</p>
+    <p><strong>Opis:</strong> Pętla, która zawsze wykonuje blok kodu przynajmniej raz, a następnie sprawdza warunek kontynuacji.</p>
+    <div class="scheme">
+      START → Wykonaj blok → Sprawdź warunek → TAK → Powrót do wykonania bloku → NIE → STOP
+    </div>
+  </div>
+  `;
+}
+</script>
+</body>
+</html>

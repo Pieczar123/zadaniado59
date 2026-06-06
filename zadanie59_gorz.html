@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 59 - Igor Gorzoch</title>
+</head>
+<body>
+
+<script>
+    let r_gor = prompt("Podaj promień koła R:");
+    r_gor = parseInt(r_gor);
+
+    let n_gor = 0;
+
+    document.write("Punkty kratowe należące do koła K(0," + r_gor + "):<br><br>");
+
+    for (let x_gor = -r_gor; x_gor <= r_gor; x_gor++) {
+        for (let y_gor = -r_gor; y_gor <= r_gor; y_gor++) {
+
+            if (x_gor * x_gor + y_gor * y_gor <= r_gor * r_gor) {
+                document.write("(" + x_gor + ", " + y_gor + ")<br>");
+                n_gor++;
+            }
+
+        }
+    }
+
+    document.write("<br>Liczba punktów kratowych w kole wynosi: " + n_gor);
+</script>
+
+</body>
+</html>

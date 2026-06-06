@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 46 - Igor Gorzoch</title>
+</head>
+<body>
+
+<div style="color:red; font-size:50px;">
+<script>
+    let h_gor;
+    let a_gor;
+
+    do {
+        h_gor = prompt("Podaj wysokość trójkąta:");
+        h_gor = parseFloat(h_gor);
+    } while (h_gor <= 0);
+
+    do {
+        a_gor = prompt("Podaj podstawę trójkąta:");
+        a_gor = parseFloat(a_gor);
+    } while (a_gor <= 0);
+
+    let pole_gor = a_gor * h_gor / 2;
+
+    document.write("Pole = " + pole_gor.toFixed(2) + " cm^2");
+</script>
+</div>
+
+</body>
+</html>

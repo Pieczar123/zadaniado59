@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 47 - Igor Gorzoch</title>
+</head>
+<body>
+
+<div style="color:red; font-size:40px;">
+<script>
+    let a_gor;
+    let b_gor;
+    let c_gor;
+
+    do {
+        a_gor = prompt("Podaj bok a trójkąta:");
+        a_gor = parseFloat(a_gor);
+    } while (a_gor <= 0);
+
+    do {
+        b_gor = prompt("Podaj bok b trójkąta:");
+        b_gor = parseFloat(b_gor);
+    } while (b_gor <= 0);
+
+    do {
+        c_gor = prompt("Podaj bok c trójkąta:");
+        c_gor = parseFloat(c_gor);
+    } while (c_gor <= 0);
+
+    if (
+        a_gor + b_gor > c_gor &&
+        a_gor + c_gor > b_gor &&
+        b_gor + c_gor > a_gor
+    ) {
+        document.write("Z podanych boków można zbudować trójkąt.");
+    } else {
+        document.write("Z podanych boków nie można zbudować trójkąta.");
+    }
+</script>
+</div>
+
+</body>
+</html>

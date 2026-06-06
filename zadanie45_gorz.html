@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 45</title>
+</head>
+<body>
+
+<script>
+    let liczba_liter_nazwiska_gor = 7;
+    let ile_razy_wyswietlic_gor = (liczba_liter_nazwiska_gor % 4) + 10;
+    let wielkosc_liter_gor = (liczba_liter_nazwiska_gor % 3) + 40;
+
+    let dana_gor = prompt("Podaj liczbę:");
+    dana_gor = parseInt(dana_gor);
+
+    document.write("ilość wykonania pętli = " + ile_razy_wyswietlic_gor + "<br>");
+    document.write("wielkość liter = " + wielkosc_liter_gor + "px<br><br>");
+
+    for (let i_g = 1; i_g <= ile_razy_wyswietlic_gor; i_g++) {
+        if (dana_gor % 2 == 0) {
+            document.write("<span style='color:blue; font-size:" + wielkosc_liter_gor + "px;'>Gorzoch</span><br>");
+        } else {
+            document.write("<span style='color:green; font-size:" + wielkosc_liter_gor + "px;'>Igor</span><br>");
+        }
+    }
+</script>
+
+</body>
+</html>

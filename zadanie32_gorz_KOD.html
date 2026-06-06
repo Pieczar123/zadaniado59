@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 32 – Mebel</title>
+<script type="text/javascript">
+
+function Mebel(rodzaj_k, material_k, kolor_k, szerokosc_k) {
+    this.rodzaj = rodzaj_k;
+    this.material = material_k;
+    this.kolor = kolor_k;
+    this.szerokosc = szerokosc_k;
+}
+
+Mebel.prototype.wypisz_gorzoch = function() {
+    alert(this.rodzaj + " " + this.material + " " + this.kolor + " " + this.szerokosc);
+}
+
+var mebel1 = new Mebel("stół", "drewno", "brązowy", "120cm");
+var mebel2 = new Mebel("krzesło", "metal", "czarny", "45cm");
+var mebel3 = new Mebel("szafa", "drewno", "biały", "200cm");
+
+mebel1.wypisz_gorzoch();
+mebel2.wypisz_gorzoch();
+mebel3.wypisz_gorzoch();
+
+document.write("dostęp do właściwości<br>");
+document.write("mebel pierwszy " + mebel1.rodzaj + " " + mebel1.material + " " + mebel1.kolor + " " + mebel1.szerokosc + "<p>");
+document.write("mebel drugi " + mebel2.rodzaj + " " + mebel2.material + " " + mebel2.kolor + " " + mebel2.szerokosc + "<p>");
+document.write("mebel trzeci " + mebel3.rodzaj + " " + mebel3.material + " " + mebel3.kolor + " " + mebel3.szerokosc + "<p>");
+
+</script>
+</head>
+<body>
+<br>
+programowanie obiektowe
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 55 - Igor Gorzoch</title>
+</head>
+<body>
+
+<script>
+    let pocz_gor;
+    let tekst_gor;
+    let ilosc_gor;
+
+    do {
+        pocz_gor = prompt("Podaj wielkość początkową tekstu z przedziału <20,60>:");
+        pocz_gor = parseInt(pocz_gor);
+
+        if (pocz_gor < 20 || pocz_gor > 60) {
+            alert("Liczba nie należy do przedziału <20,60>");
+        }
+    } while (pocz_gor < 20 || pocz_gor > 60);
+
+    tekst_gor = prompt("Podaj dowolny tekst:");
+    ilosc_gor = prompt("Ile razy wyświetlić tekst?");
+    ilosc_gor = parseInt(ilosc_gor);
+
+    for (let i_gor = 1; i_gor <= ilosc_gor; i_gor++) {
+        document.write(
+            "<p style='font-size:" + pocz_gor + "px; color:black;'>" 
+            + tekst_gor + "</p>"
+        );
+
+        if (pocz_gor < 100) {
+            pocz_gor = pocz_gor + 5;
+        } else {
+            pocz_gor = pocz_gor - 5;
+        }
+    }
+</script>
+
+</body>
+</html>

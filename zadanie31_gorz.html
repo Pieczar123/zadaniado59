@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+
+var mebel = {
+    rodzaj: 'stół',
+    material: 'drewno',
+    kolor: 'brązowy',
+    
+    mebel_wyswietl_gorzoch: function() {
+        document.write(this.rodzaj + ' ' + this.material + ' ' + this.kolor);
+    }
+}
+
+mebel.wysokosc = 75;
+
+mebel.mebel_wypisz_gorzoch = function() {
+    alert('Wysokość: ' + this.wysokosc + ' cm');
+}
+
+mebel.mebel_wypisz_gorzoch();
+
+</script>
+</head>
+<body>
+</body>
+</html>

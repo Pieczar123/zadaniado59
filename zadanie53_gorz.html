@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 53 - Igor Gorzoch</title>
+</head>
+<body>
+
+<script>
+    let a_gor = prompt("Podaj wysokość prostokąta:");
+    let b_gor = prompt("Podaj szerokość prostokąta:");
+
+    a_gor = parseInt(a_gor);
+    b_gor = parseInt(b_gor);
+
+    let wiersz_gor = "";
+
+    for (let i_gor = 1; i_gor <= b_gor; i_gor++) {
+        wiersz_gor = wiersz_gor + "*";
+    }
+
+    document.write(wiersz_gor + "<br>");
+
+    for (let i_gor = 1; i_gor <= a_gor - 2; i_gor++) {
+        document.write("*");
+
+        for (let j_gor = 1; j_gor <= b_gor - 2; j_gor++) {
+            document.write("&nbsp;&nbsp;");
+        }
+
+        document.write("*<br>");
+    }
+
+    document.write(wiersz_gor + "<br>");
+</script>
+
+</body>
+</html>

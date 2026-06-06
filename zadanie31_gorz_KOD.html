@@ -1,0 +1,43 @@
+<html>
+ <body>
+ <textarea cols="90" rows="24">
+<html>
+ <head>
+ <script type="text/javascript">
+
+ var mebel = {
+    rodzaj: 'stół',
+    material: 'drewno',
+    kolor: 'brązowy',
+    mebel_wyswietl_gorzoch: function () {
+        document.write(this.rodzaj + ' ' + this.material + ' ' + this.kolor)
+    }
+ }
+
+ mebel.mebel_wyswietl_gorzoch();
+
+ mebel.wysokosc = 75;
+ mebel.mebel_wypisz_gorzoch = function() {
+    alert('wysokość: ' + this.wysokosc + ' cm')
+ }
+
+ mebel.mebel_wypisz_gorzoch();
+
+ </script>
+ </head>
+<body>
+<br>
+ Programowanie obiektowe. <br>
+ Obiekt to Mebel<br>
+ Pola:<br>
+ rodzaj<br>
+ material<br>
+ kolor<br>
+ metoda: mebel_wyswietl_gorzoch<br>
+ nowe pole to wysokosc <br>
+ nowa metoda to mebel_wypisz_gorzoch();<br>
+</body>
+</html>
+ </textarea>
+ </body>
+</html>
